@@ -1,5 +1,10 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
 }
 
 img {
@@ -10,6 +15,7 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin: 32px;
 }
 
 /* do not edit this footer */
@@ -23,4 +29,22 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+ 
+
+}
+
+.item {
+  display: flex; /* Cada bloque también usa Flexbox */
+  flex-direction: column; /* Imagen arriba, texto abajo */
+  align-items: center; /* Centra la imagen y el texto */
+  max-width: 200px; /* Limita el ancho para que el texto haga wrap */
+  text-align: center; /* Centra el texto */
+  
 }
